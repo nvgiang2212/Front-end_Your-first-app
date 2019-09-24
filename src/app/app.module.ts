@@ -10,6 +10,7 @@ import { ProductDetailComponent } from './component/product-detail/product-detai
 import { CartComponent } from './component/cart/cart.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ShippingComponent } from './component/shipping/shipping.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ShippingComponent } from './component/shipping/shipping.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
