@@ -8,6 +8,8 @@ import { ProductListComponent } from './component/product-list/product-list.comp
 import { ProductAlertsComponent } from './component/product-alerts/product-alerts.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { CartComponent } from './component/cart/cart.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ShippingComponent } from './component/shipping/shipping.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { CartComponent } from './component/cart/cart.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailComponent,
-    CartComponent
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
